@@ -15,7 +15,8 @@ public class ModItems {
     public static final RegistryObject<Item> UTILIUM = ITEMS.register("utilium",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
-
+    public static final RegistryObject<Item> UTILIUM_FRAGMENTS = ITEMS.register("utilium_fragments",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
