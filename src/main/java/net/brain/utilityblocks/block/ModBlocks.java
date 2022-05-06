@@ -31,6 +31,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()),
             CreativeModeTab.TAB_MISC);
 
+    public static final RegistryObject<Block> DEEPSLATE_UTILIUM_ORE = registerBlock("deepslate_utilium_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(9f)
+                    .requiresCorrectToolForDrops()),
+            CreativeModeTab.TAB_MISC);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

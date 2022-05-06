@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "utilityblocks:block/deepslate_utilium_ore"
+  }
+}
