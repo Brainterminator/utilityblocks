@@ -24,19 +24,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> UTILIUM_BLOCK = registerBlock("utilium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .sound(SoundType.AMETHYST)
-                    .strength(0.5f)),
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .sound(SoundType.AMETHYST_CLUSTER)
-                    .strength(0.8f)),
+                    .requiresCorrectToolForDrops()
+                    .strength(5f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_UTILIUM_ORE = registerBlock("deepslate_utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .sound(SoundType.AMETHYST_CLUSTER)
-                    .strength(2f)),
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 

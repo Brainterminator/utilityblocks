@@ -1,6 +1,7 @@
 {
   "item.utilityblocks.utilium": "Utilium",
   "item.utilityblocks.utilium_fragments": "Utilium Fragments",
+  "item.utilityblocks.dowsing_rod": "Dowsing Rod",
 
   "block.utilityblocks.utilium_block": "Utilium Block",
   "block.utilityblocks.utilium_ore": "Utilium Ore",
@@ -21,6 +22,8 @@
   "block.utilityblocks.jumpup_block_6": "Jumpup Block 6",
 
   "block.utilityblocks.slingshot_block_1": "Slingshot Block",
+
+  "item.utilityblocks.dowsing_rod.no_valuables": "No Valuables Found!",
 
   "itemGroup.utilityblocks": "Utility Blocks"
 }
