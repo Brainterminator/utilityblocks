@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "utilityblocks:utilium_block",
+    "utilityblocks:utilium_ore",
+    "utilityblocks:deepslate_utilium_block"
+  ]
+}

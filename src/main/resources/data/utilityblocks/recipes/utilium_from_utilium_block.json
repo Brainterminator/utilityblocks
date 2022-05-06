@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "utilium",
+  "ingredients": [
+    {
+      "item": "utilityblocks:utilium_block"
+    }
+  ],
+  "result": {
+    "item": "utilityblocks:utilium",
+    "count": 9
+  }
+}
