@@ -4,5 +4,7 @@
 
   "block.utilityblocks.utilium_block": "Utilium Block",
   "block.utilityblocks.utilium_ore": "Utilium Ore",
-  "block.utilityblocks.deepslate_utilium_ore": "Deepslate Utilium Ore"
+  "block.utilityblocks.deepslate_utilium_ore": "Deepslate Utilium Ore",
+
+  "itemGroup.utilityblocks": "Utility Blocks"
 }

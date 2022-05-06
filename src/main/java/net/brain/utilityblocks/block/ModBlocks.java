@@ -1,6 +1,7 @@
 package net.brain.utilityblocks.block;
 
 import net.brain.utilityblocks.UtilityBlocks;
+import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,19 +24,19 @@ public class ModBlocks {
     () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
             .strength(9f)
             .requiresCorrectToolForDrops()),
-            CreativeModeTab.TAB_MISC);
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f)
                     .requiresCorrectToolForDrops()),
-            CreativeModeTab.TAB_MISC);
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_UTILIUM_ORE = registerBlock("deepslate_utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(9f)
                     .requiresCorrectToolForDrops()),
-            CreativeModeTab.TAB_MISC);
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
