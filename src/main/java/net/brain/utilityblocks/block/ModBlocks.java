@@ -22,24 +22,21 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> UTILIUM_BLOCK = registerBlock("utilium_block",
     () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-            .strength(9f)
-            .requiresCorrectToolForDrops()),
+            .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f)
-                    .requiresCorrectToolForDrops()),
+                    .strength(0.8f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_UTILIUM_ORE = registerBlock("deepslate_utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(9f)
-                    .requiresCorrectToolForDrops()),
+                    .strength(2f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
