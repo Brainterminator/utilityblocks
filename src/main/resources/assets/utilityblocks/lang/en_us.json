@@ -6,5 +6,21 @@
   "block.utilityblocks.utilium_ore": "Utilium Ore",
   "block.utilityblocks.deepslate_utilium_ore": "Deepslate Utilium Ore",
 
+  "block.utilityblocks.speedup_block_1": "Speedup Block 1",
+  "block.utilityblocks.speedup_block_2": "Speedup Block 2",
+  "block.utilityblocks.speedup_block_3": "Speedup Block 3",
+  "block.utilityblocks.speedup_block_4": "Speedup Block 4",
+  "block.utilityblocks.speedup_block_5": "Speedup Block 5",
+  "block.utilityblocks.speedup_block_6": "Speedup Block 6",
+
+  "block.utilityblocks.jumpup_block_1": "Jumpup Block 1",
+  "block.utilityblocks.jumpup_block_2": "Jumpup Block 2",
+  "block.utilityblocks.jumpup_block_3": "Jumpup Block 3",
+  "block.utilityblocks.jumpup_block_4": "Jumpup Block 4",
+  "block.utilityblocks.jumpup_block_5": "Jumpup Block 5",
+  "block.utilityblocks.jumpup_block_6": "Jumpup Block 6",
+
+  "block.utilityblocks.slingshot_block_1": "Slingshot Block",
+
   "itemGroup.utilityblocks": "Utility Blocks"
 }
