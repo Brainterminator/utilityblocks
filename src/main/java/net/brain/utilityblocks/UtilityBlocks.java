@@ -1,6 +1,7 @@
 package net.brain.utilityblocks;
 
 import com.mojang.logging.LogUtils;
+import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -33,6 +34,7 @@ public class UtilityBlocks
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
