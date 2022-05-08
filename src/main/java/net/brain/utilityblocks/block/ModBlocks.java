@@ -1,8 +1,11 @@
 package net.brain.utilityblocks.block;
 
 import net.brain.utilityblocks.UtilityBlocks;
+import net.brain.utilityblocks.block.custom.PotionBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -23,21 +26,18 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> UTILIUM_BLOCK = registerBlock("utilium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .sound(SoundType.AMETHYST)
                     .requiresCorrectToolForDrops()
                     .strength(9f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST_CLUSTER)
                     .requiresCorrectToolForDrops()
                     .strength(5f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_UTILIUM_ORE = registerBlock("deepslate_utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST_CLUSTER)
                     .requiresCorrectToolForDrops()
                     .strength(9f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
@@ -47,42 +47,36 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SPEEDUP_BLOCK_1 = registerBlock("speedup_block_1",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .friction(0.55f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> SPEEDUP_BLOCK_2 = registerBlock("speedup_block_2",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .friction(0.50f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> SPEEDUP_BLOCK_3 = registerBlock("speedup_block_3",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .friction(0.45f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> SPEEDUP_BLOCK_4 = registerBlock("speedup_block_4",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .friction(0.40f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> SPEEDUP_BLOCK_5 = registerBlock("speedup_block_5",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .friction(0.35f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> SPEEDUP_BLOCK_6 = registerBlock("speedup_block_6",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST_CLUSTER)
                     .friction(0.30f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
@@ -90,7 +84,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SLINGSHOT_BLOCK_1 = registerBlock("slingshot_block_1",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .friction(5f)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
@@ -98,46 +91,60 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_1 = registerBlock("jumpup_block_1",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .jumpFactor( 2F)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_2 = registerBlock("jumpup_block_2",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .jumpFactor( 2.5F)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_3 = registerBlock("jumpup_block_3",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .jumpFactor( 3F)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_4 = registerBlock("jumpup_block_4",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .jumpFactor( 3.5F)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_5 = registerBlock("jumpup_block_5",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .jumpFactor( 4F)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_6 = registerBlock("jumpup_block_6",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .sound(SoundType.AMETHYST)
                     .jumpFactor( 4.5F)
                     .strength(0.5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
+
+/*
+    public static final RegistryObject<Block> INVISIBILITY_BLOCK = registerBlock("invisibility_block",
+            () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f)
+                    ,MobEffects.INVISIBILITY,300,1),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONFUSION_BLOCK = registerBlock("confusion_block",
+            () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f)
+                    ,MobEffects.CONFUSION,300,1),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> BEAMUP_BLOCK = registerBlock("beamup_block",
+            () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f)
+                    ,MobEffects.LEVITATION,60,80),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+*/
 
 
 
