@@ -138,13 +138,14 @@ public class ModBlocks {
                     .strength(0.5f)
                     ,MobEffects.CONFUSION,300,1),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+*/
 
     public static final RegistryObject<Block> BEAMUP_BLOCK = registerBlock("beamup_block",
             () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(0.5f)
+                    .requiresCorrectToolForDrops()
                     ,MobEffects.LEVITATION,60,80),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-*/
 
 
 
