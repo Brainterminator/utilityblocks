@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#Y#",
+    "YXY",
+    "#Y#"
+  ],
+  "key": {
+    "#": {
+      "item": "utilityblocks:utilium"
+    },
+    "X": {
+      "item": "minecraft:ice"
+    },
+    "Y": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:speedup_block_1",
+    "count": 10
+  }
+}

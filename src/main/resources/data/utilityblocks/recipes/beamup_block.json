@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "YZY",
+    "#Y#"
+  ],
+  "key": {
+    "#": {
+      "item": "utilityblocks:utilium"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "Y": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Z": {
+      "item": "utilityblocks:jumpup_block_6"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:beamup_block"
+  }
+}

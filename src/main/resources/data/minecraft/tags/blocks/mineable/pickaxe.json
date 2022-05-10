@@ -3,7 +3,6 @@
   "values": [
     "utilityblocks:utilium_ore",
     "utilityblocks:deepslate_utilium_ore",
-    "utilityblocks:utilium_block",
-    "utilityblocks:beamup_block"
+    "utilityblocks:utilium_block"
   ]
 }

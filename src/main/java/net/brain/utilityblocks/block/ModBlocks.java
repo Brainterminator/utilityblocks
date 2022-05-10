@@ -85,7 +85,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SLINGSHOT_BLOCK_1 = registerBlock("slingshot_block_1",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .friction(5f)
-                    .strength(0.5f)),
+                    .strength(1f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
@@ -142,8 +142,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BEAMUP_BLOCK = registerBlock("beamup_block",
             () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(0.5f)
-                    .requiresCorrectToolForDrops()
+                    .strength(1f)
                     ,MobEffects.LEVITATION,60,80),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
