@@ -1,4 +1,4 @@
-# utilityblocks
+# Utility Blocks Mod
 ### Who is making this Mod?
 Hi, I'm Leo and I'm creating this mod as a hobby
 ### Where can I download the mod for MC?
