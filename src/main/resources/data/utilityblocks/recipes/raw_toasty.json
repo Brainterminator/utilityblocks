@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "X": {
+      "item": "minecraft:chicken"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:raw_toasty"
+  }
+}

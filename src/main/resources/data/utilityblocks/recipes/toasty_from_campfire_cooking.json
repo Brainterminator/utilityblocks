@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "utilityblocks:raw_toasty"
+  },
+  "result": "utilityblocks:toasty",
+  "experience": 0.35,
+  "cookingtime": 600
+}

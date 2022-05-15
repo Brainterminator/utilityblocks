@@ -2,6 +2,10 @@
   "item.utilityblocks.utilium": "Utilium",
   "item.utilityblocks.utilium_fragments": "Utilium Fragments",
   "item.utilityblocks.dowsing_rod": "Dowsing Rod",
+  "item.utilityblocks.toasty": "Toasty",
+  "item.utilityblocks.raw_toasty": "Raw Toasty",
+  "item.utilityblocks.toasty_sandwich": "Toasty Sandwich",
+
 
   "block.utilityblocks.utilium_block": "Utilium Block",
   "block.utilityblocks.utilium_ore": "Utilium Ore",
