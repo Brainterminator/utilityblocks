@@ -1,7 +1,9 @@
 package net.brain.utilityblocks.item.custom;
 
 import net.brain.utilityblocks.block.ModBlocks;
+import net.brain.utilityblocks.util.ModTags;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.InteractionResult;
@@ -51,7 +53,6 @@ public class DowsingRodItem extends Item {
     }
 
     private boolean isValuableBlock(Block block){
-        return  block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE
-                || block == Blocks.DEEPSLATE_DIAMOND_ORE || block == Blocks.DEEPSLATE_IRON_ORE;
+        return Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).is(ModTags.Blocks.DOWSING_ROD_VALUABLES);
     }
 }
