@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "utilityblocks:block/utilium_slab"
+    },
+    "type=double": {
+      "model": "utilityblocks:block/utilium_block"
+    },
+    "type=top": {
+      "model": "utilityblocks:block/utilium_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "utilityblocks:block/utilium_block",
+    "top": "utilityblocks:block/utilium_block",
+    "side": "utilityblocks:block/utilium_block"
+  }
+}

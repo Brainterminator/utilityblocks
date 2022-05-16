@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "utilityblocks:utilium_block"
+  },
+  "result": "utilityblocks:utilium_fence_gate",
+  "count": 1
+}

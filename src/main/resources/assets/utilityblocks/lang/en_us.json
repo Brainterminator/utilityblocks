@@ -11,6 +11,12 @@
   "block.utilityblocks.utilium_ore": "Utilium Ore",
   "block.utilityblocks.deepslate_utilium_ore": "Deepslate Utilium Ore",
 
+  "block.utilityblocks.utilium_slab": "Utilium Slab",
+  "block.utilityblocks.utilium_stairs": "Utilium Stairs",
+  "block.utilityblocks.utilium_fence": "Utilium Fence",
+  "block.utilityblocks.utilium_wall": "Utilium Wall",
+  "block.utilityblocks.utilium_fence_gate": "Utilium Fence Gate",
+
   "block.utilityblocks.speedup_block_1": "Speedup Block 1",
   "block.utilityblocks.speedup_block_2": "Speedup Block 2",
   "block.utilityblocks.speedup_block_3": "Speedup Block 3",

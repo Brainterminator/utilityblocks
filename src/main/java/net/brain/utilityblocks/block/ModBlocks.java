@@ -10,8 +10,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -148,6 +147,39 @@ public class ModBlocks {
                     .strength(1f)
                     ,MobEffects.LEVITATION,60,80),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.beamup_block");
+
+
+
+    public static final RegistryObject<Block> UTILIUM_STAIRS = registerBlock("utilium_stairs",
+            () -> new StairBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_SLAB = registerBlock("utilium_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_FENCE = registerBlock("utilium_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_FENCE_GATE = registerBlock("utilium_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_WALL = registerBlock("utilium_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(9f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
 
