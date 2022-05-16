@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "utilityblocks:block/glass_door_top",
+    "bottom": "utilityblocks:block/glass_door_bottom"
+  }
+}

@@ -29,7 +29,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> UTILIUM_BLOCK = registerBlock("utilium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
-                    .strength(9f)),
+                    .strength(5f)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
@@ -154,31 +154,59 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
-                    .strength(9f)),
+                    .strength(5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_SLAB = registerBlock("utilium_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
-                    .strength(9f)),
+                    .strength(5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_FENCE = registerBlock("utilium_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
-                    .strength(9f)),
+                    .strength(5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_FENCE_GATE = registerBlock("utilium_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
-                    .strength(9f)),
+                    .strength(5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_WALL = registerBlock("utilium_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
-                    .strength(9f)),
+                    .strength(5f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+
+    public static final RegistryObject<Block> GLASS_BUTTON = registerBlock("glass_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noCollission()),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_PRESSURE_PLATE = registerBlock("glass_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_DOOR = registerBlock("glass_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_TRAPDOOR = registerBlock("glass_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 

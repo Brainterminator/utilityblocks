@@ -17,6 +17,13 @@
   "block.utilityblocks.utilium_wall": "Utilium Wall",
   "block.utilityblocks.utilium_fence_gate": "Utilium Fence Gate",
 
+  "block.utilityblocks.glass_button": "Glass Button",
+  "block.utilityblocks.glass_pressure_plate": "Glass Pressure Plate",
+  "block.utilityblocks.glass_door": "Glass Door",
+  "block.utilityblocks.glass_trapdoor": "Glass Trapdoor",
+
+
+
   "block.utilityblocks.speedup_block_1": "Speedup Block 1",
   "block.utilityblocks.speedup_block_2": "Speedup Block 2",
   "block.utilityblocks.speedup_block_3": "Speedup Block 3",
