@@ -25,11 +25,16 @@
   "block.utilityblocks.jumpup_block_5": "Jumpup Block 5",
   "block.utilityblocks.jumpup_block_6": "Jumpup Block 6",
 
-  "block.utilityblocks.beamup_block": "BeamUp Block 6",
+  "block.utilityblocks.beamup_block": "BeamUp Block",
 
   "block.utilityblocks.slingshot_block_1": "Slingshot Block",
 
   "item.utilityblocks.dowsing_rod.no_valuables": "No Valuables Found!",
+
+  "tooltip.utilityblocks.dowsing_rod.tooltip.shift": "Right Click to find Valuables",
+  "tooltip.utilityblocks.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
+
+  "tooltip.utilityblocks.block.beamup_block": "Caution! This will throw you in the sky and will not negotiate fall damage. It will not throw you up while sneaking",
 
   "itemGroup.utilityblocks": "Utility Blocks"
 }
