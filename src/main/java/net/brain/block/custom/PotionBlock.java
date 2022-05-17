@@ -1,4 +1,4 @@
-package net.brain.utilityblocks.block.custom;
+package net.brain.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffect;

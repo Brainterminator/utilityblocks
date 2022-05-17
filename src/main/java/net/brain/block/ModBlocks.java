@@ -1,12 +1,12 @@
-package net.brain.utilityblocks.block;
+package net.brain.block;
 
+import net.brain.block.custom.ModWallBlock;
+import net.brain.block.custom.PotionBlock;
 import net.brain.utilityblocks.UtilityBlocks;
-import net.brain.utilityblocks.block.custom.PotionBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -204,6 +204,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GLASS_TRAPDOOR = registerBlock("glass_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                   .strength(0.3f)
+                  .sound(SoundType.GLASS)
+                   .noOcclusion()),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_WALL = registerBlock("glass_wall",
+            () -> new ModWallBlock(BlockBehaviour.Properties.of(Material.GLASS)
                     .strength(0.3f)
                     .sound(SoundType.GLASS)
                     .noOcclusion()),

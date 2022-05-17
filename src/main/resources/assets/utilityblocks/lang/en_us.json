@@ -6,6 +6,13 @@
   "item.utilityblocks.raw_toasty": "Raw Toasty",
   "item.utilityblocks.toasty_sandwich": "Toasty Sandwich",
 
+  "item.utilityblocks.utilium_sword": "Utilium Sword",
+  "item.utilityblocks.utilium_pickaxe": "Utilium Pickaxe",
+  "item.utilityblocks.utilium_shovel": "Utilium Shovel",
+  "item.utilityblocks.utilium_axe": "Utilium Axe",
+  "item.utilityblocks.utilium_hoe": "Utilium Hoe",
+
+
 
   "block.utilityblocks.utilium_block": "Utilium Block",
   "block.utilityblocks.utilium_ore": "Utilium Ore",
@@ -20,6 +27,7 @@
   "block.utilityblocks.glass_button": "Glass Button",
   "block.utilityblocks.glass_pressure_plate": "Glass Pressure Plate",
   "block.utilityblocks.glass_door": "Glass Door",
+  "block.utilityblocks.glass_wall": "Glass Wall",
   "block.utilityblocks.glass_trapdoor": "Glass Trapdoor",
 
 

@@ -40,7 +40,7 @@ public class ModItems {
             () -> new PickaxeItem(ModTiers.UTILIUM, 1,-2.8f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
     public static final RegistryObject<Item> UTILIUM_SHOVEL = ITEMS.register("utilium_shovel",
-            () -> new ShovelItem(ModTiers.UTILIUM, 1,-3.0f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+            () -> new ShovelItem(ModTiers.UTILIUM, 1.5f,-3.0f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
     public static final RegistryObject<Item> UTILIUM_AXE = ITEMS.register("utilium_axe",
             () -> new AxeItem(ModTiers.UTILIUM, 6,-3.1f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));

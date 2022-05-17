@@ -1,6 +1,5 @@
 package net.brain.utilityblocks.item.custom;
 
-import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
@@ -17,9 +16,6 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.event.world.NoteBlockEvent;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
