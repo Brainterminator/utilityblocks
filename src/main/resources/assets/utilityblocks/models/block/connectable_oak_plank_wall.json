@@ -1,7 +1,7 @@
 {
 	"textures": {
-		"0": "utilityblocks:block/utilium_block",
-		"particle": "utilityblocks:block/utilium_block"
+		"0": "minecraft:block/oak_planks",
+		"particle": "minecraft:block/oak_planks"
 	},
 	"elements": [
 		{

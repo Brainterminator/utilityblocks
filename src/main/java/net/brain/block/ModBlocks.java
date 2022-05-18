@@ -217,11 +217,18 @@ public class ModBlocks {
                     .noOcclusion()),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
+
     public static final RegistryObject<Block> CONNECTABLE_UTILIUM_WALL = registerBlock("connectable_utilium_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL)
                             .requiresCorrectToolForDrops()
                             .strength(5f)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_OAK_PLANK_WALL = registerBlock("connectable_oak_plank_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.WOOD)
+                            .strength(2f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
