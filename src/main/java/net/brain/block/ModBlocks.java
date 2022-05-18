@@ -1,5 +1,6 @@
 package net.brain.block;
 
+import net.brain.block.custom.ConnectableWallBlock;
 import net.brain.block.custom.ModWallBlock;
 import net.brain.block.custom.PotionBlock;
 import net.brain.utilityblocks.UtilityBlocks;
@@ -214,6 +215,13 @@ public class ModBlocks {
                     .strength(0.3f)
                     .sound(SoundType.GLASS)
                     .noOcclusion()),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_UTILIUM_WALL = registerBlock("connectable_utilium_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.METAL)
+                            .requiresCorrectToolForDrops()
+                            .strength(5f)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 

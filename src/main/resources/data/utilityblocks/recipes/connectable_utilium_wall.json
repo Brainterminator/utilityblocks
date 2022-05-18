@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "utilityblocks:utilium_block"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:connectable_utilium_wall",
+    "count": 6
+  }
+}

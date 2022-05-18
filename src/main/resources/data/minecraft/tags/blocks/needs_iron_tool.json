@@ -8,6 +8,7 @@
     "utilityblocks:utilium_fence_gate",
     "utilityblocks:utilium_slab",
     "utilityblocks:utilium_stairs",
-    "utilityblocks:utilium_block"
+    "utilityblocks:utilium_block",
+    "utilityblocks:connectable_utilium_wall"
   ]
 }
