@@ -1,0 +1,17 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_planks"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:connectable_crimson_plank_wall",
+    "count": 6
+  }
+}
