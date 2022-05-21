@@ -31,11 +31,11 @@ logoFile="utilityblocks.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks to Jost and Kaupenjoe" #optional
 # A text field displayed in the mod UI
-authors="Brainterminator" #optional
+authors="Brainterminator, Mongoshrimp" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This Mod adds some useful Blocks to Minecraft.
-
+This Mod adds the Utility Blocks to Minecraft.
+It also adds a lot of Building Blocks thanks to the contributions of Mongoshrimp!
 Have fun playing!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
