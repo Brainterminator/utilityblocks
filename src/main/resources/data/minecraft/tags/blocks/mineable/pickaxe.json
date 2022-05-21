@@ -9,6 +9,17 @@
     "utilityblocks:utilium_slab",
     "utilityblocks:utilium_stairs",
     "utilityblocks:utilium_block",
-    "utilityblocks:connectable_utilium_wall"
+    "utilityblocks:connectable_utilium_wall",
+    "utilityblocks:connectable_stone_wall",
+    "utilityblocks:connectable_cobblestone_wall",
+    "utilityblocks:connectable_deepslate_wall",
+    "utilityblocks:connectable_cobbled_deepslate_wall",
+    "utilityblocks:connectable_polished_deepslate_wall",
+    "utilityblocks:connectable_granite_wall",
+    "utilityblocks:connectable_polished_granite_wall",
+    "utilityblocks:connectable_diorite_wall",
+    "utilityblocks:connectable_polished_diorite_wall",
+    "utilityblocks:connectable_andesite_wall",
+    "utilityblocks:connectable_polished_andesite_wall"
   ]
 }

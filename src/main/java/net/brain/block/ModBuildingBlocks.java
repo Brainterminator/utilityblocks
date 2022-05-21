@@ -37,7 +37,99 @@ public class ModBuildingBlocks {
 
 
 
-    // VANILLA RESSOURCE WALLS
+
+
+    // VANILLA RESSOURCE WALLS - STONES
+
+    public static final RegistryObject<Block> CONNECTABLE_STONE_WALL = registerBlock("connectable_stone_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_COBBLESTONE_WALL = registerBlock("connectable_cobblestone_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_DEEPSLATE_WALL = registerBlock("connectable_deepslate_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_COBBLED_DEEPSLATE_WALL = registerBlock("connectable_cobbled_deepslate_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_POLISHED_DEEPSLATE_WALL = registerBlock("connectable_polished_deepslate_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(2f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_GRANITE_WALL = registerBlock("connectable_granite_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_POLISHED_GRANITE_WALL = registerBlock("connectable_polished_granite_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_DIORITE_WALL = registerBlock("connectable_diorite_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_POLISHED_DIORITE_WALL = registerBlock("connectable_polished_diorite_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_ANDESITE_WALL = registerBlock("connectable_andesite_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_POLISHED_ANDESITE_WALL = registerBlock("connectable_polished_andesite_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.STONE)
+                            .strength(1.5f)
+                            .explosionResistance(6f)
+                            .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    // VANILLA RESSOURCE WALLS - WOODS
 
     public static final RegistryObject<Block> CONNECTABLE_OAK_PLANK_WALL = registerBlock("connectable_oak_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
