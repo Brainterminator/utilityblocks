@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "utilityblocks:connectable_oak_plank_wall"
+    "utilityblocks:connectable_oak_plank_wall",
+    "utilityblocks:connectable_spruce_plank_wall",
+    "utilityblocks:connectable_birch_plank_wall",
+    "utilityblocks:connectable_jungle_plank_wall",
+    "utilityblocks:connectable_acacia_plank_wall",
+    "utilityblocks:connectable_dark_oak_plank_wall",
+    "utilityblocks:connectable_crimson_plank_wall",
+    "utilityblocks:connectable_warped_plank_wall"
   ]
 }
