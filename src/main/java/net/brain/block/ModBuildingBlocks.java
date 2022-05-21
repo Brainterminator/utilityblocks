@@ -26,7 +26,7 @@ public class ModBuildingBlocks {
 
     
     
-    // MOD RESSOURCE WALLS
+    
     
     public static final RegistryObject<Block> CONNECTABLE_UTILIUM_WALL = registerBlock("connectable_utilium_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
@@ -35,64 +35,10 @@ public class ModBuildingBlocks {
                             .strength(5f)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
-
-
-    // VANILLA RESSOURCE WALLS
-
     public static final RegistryObject<Block> CONNECTABLE_OAK_PLANK_WALL = registerBlock("connectable_oak_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_SPRUCE_PLANK_WALL = registerBlock("connectable_spruce_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_BIRCH_PLANK_WALL = registerBlock("connectable_birch_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_JUNGLE_PLANK_WALL = registerBlock("connectable_jungle_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_ACACIA_PLANK_WALL = registerBlock("connectable_acacia_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_DARK_OAK_PLANK_WALL = registerBlock("connectable_dark_oak_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_CRIMSON_PLANK_WALL = registerBlock("connectable_crimson_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> CONNECTABLE_WARPED_PLANK_WALL = registerBlock("connectable_warped_plank_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.WOOD)
-                            .strength(2f)
-                            .explosionResistance(3f)),
+                            .strength(2f)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     
