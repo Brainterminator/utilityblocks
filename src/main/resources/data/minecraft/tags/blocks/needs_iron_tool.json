@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "utilityblocks:utilium_ore",
     "utilityblocks:deepslate_utilium_ore",
     "utilityblocks:utilium_wall",
     "utilityblocks:utilium_fence",
