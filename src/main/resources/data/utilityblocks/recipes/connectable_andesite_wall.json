@@ -1,0 +1,17 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:connectable_andesite_wall",
+    "count": 6
+  }
+}

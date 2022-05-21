@@ -62,5 +62,25 @@
   "itemGroup.buildingblocks": "Building Blocks",
 
   "block.utilityblocks.connectable_utilium_wall": "Connectable Utilitum Wall",
-  "block.utilityblocks.connectable_oak_plank_wall": "Connectable Oak Plank Wall"
+
+  "block.utilityblocks.connectable_stone_wall": "Connectable Stone Wall",
+  "block.utilityblocks.connectable_cobblestone_wall": "Connectable Cobblestone Wall",
+  "block.utilityblocks.connectable_deepslate_wall": "Connectable Deepslate Wall",
+  "block.utilityblocks.connectable_cobbled_deepslate_wall": "Connectable Cobbled Deepslate Wall",
+  "block.utilityblocks.connectable_polished_deepslate_wall": "Connectable Polished Deepslate Wall",
+  "block.utilityblocks.connectable_granite_wall": "Connectable Granite Wall",
+  "block.utilityblocks.connectable_polished_granite_wall": "Connectable Polished Granite Wall",
+  "block.utilityblocks.connectable_diorite_wall": "Connectable Diorite Wall",
+  "block.utilityblocks.connectable_polished_diorite_wall": "Connectable Polished Diorite Wall",
+  "block.utilityblocks.connectable_andesite_wall": "Connectable Andesite Wall",
+  "block.utilityblocks.connectable_polished_andesite_wall": "Connectable Polished Andesite Wall",
+
+  "block.utilityblocks.connectable_oak_plank_wall": "Connectable Oak Plank Wall",
+  "block.utilityblocks.connectable_spruce_plank_wall": "Connectable Spruce Plank Wall",
+  "block.utilityblocks.connectable_birch_plank_wall": "Connectable Birch Plank Wall",
+  "block.utilityblocks.connectable_jungle_plank_wall": "Connectable Jungle Plank Wall",
+  "block.utilityblocks.connectable_acacia_plank_wall": "Connectable Acacia Plank Wall",
+  "block.utilityblocks.connectable_dark_oak_plank_wall": "Connectable Dark Oak Plank Wall",
+  "block.utilityblocks.connectable_crimson_plank_wall": "Connectable Crimson Plank Wall",
+  "block.utilityblocks.connectable_warped_plank_wall": "Connectable Warped Plank Wall"
 }
