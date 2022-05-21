@@ -1,4 +1,6 @@
 {
+  "itemGroup.utilityblocks": "Utility Blocks",
+
   "item.utilityblocks.utilium": "Utilium",
   "item.utilityblocks.utilium_fragments": "Utilium Fragments",
   "item.utilityblocks.dowsing_rod": "Dowsing Rod",
@@ -11,8 +13,6 @@
   "item.utilityblocks.utilium_shovel": "Utilium Shovel",
   "item.utilityblocks.utilium_axe": "Utilium Axe",
   "item.utilityblocks.utilium_hoe": "Utilium Hoe",
-
-
 
   "block.utilityblocks.utilium_block": "Utilium Block",
   "block.utilityblocks.utilium_ore": "Utilium Ore",
@@ -29,11 +29,6 @@
   "block.utilityblocks.glass_door": "Glass Door",
   "block.utilityblocks.glass_wall": "Glass Wall",
   "block.utilityblocks.glass_trapdoor": "Glass Trapdoor",
-
-  "block.utilityblocks.connectable_utilium_wall": "Connectable Utilitum Wall",
-  "block.utilityblocks.connectable_oak_plank_wall": "Connectable Oak Plank Wall",
-
-
 
   "block.utilityblocks.speedup_block_1": "Speedup Block 1",
   "block.utilityblocks.speedup_block_2": "Speedup Block 2",
@@ -60,5 +55,12 @@
 
   "tooltip.utilityblocks.block.beamup_block": "Caution! This will throw you in the sky and will not negotiate fall damage. It will not throw you up while sneaking",
 
-  "itemGroup.utilityblocks": "Utility Blocks"
+
+
+
+
+  "itemGroup.buildingblocks": "Building Blocks",
+
+  "block.utilityblocks.connectable_utilium_wall": "Connectable Utilitum Wall",
+  "block.utilityblocks.connectable_oak_plank_wall": "Connectable Oak Plank Wall"
 }
