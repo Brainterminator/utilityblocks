@@ -10,7 +10,7 @@
       "item": "minecraft:wheat"
     },
     "X": {
-      "item": "minecraft:chicken"
+      "tag": "utilityblocks:chicken"
     }
   },
   "result": {
