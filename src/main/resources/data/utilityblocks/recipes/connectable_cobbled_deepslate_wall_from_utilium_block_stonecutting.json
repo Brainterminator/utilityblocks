@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:cobbled_deepslate"
+  },
+  "result": "utilityblocks:connectable_cobbled_deepslate_wall",
+  "count": 2
+}

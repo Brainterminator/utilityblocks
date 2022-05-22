@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:polished_granite"
+  },
+  "result": "utilityblocks:connectable_polished_granite_wall",
+  "count": 2
+}
