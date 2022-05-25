@@ -99,7 +99,7 @@ public class ModBlocks {
                     .friction(5f)
                     .strength(1f)
                     .sound(SoundType.STONE)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.slingshot_block_1");
 
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_1 = registerBlock("jumpup_block_1",
