@@ -187,6 +187,16 @@ public class ModBuildingBlocks {
                             .explosionResistance(3f)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
+    // VANILLA RESSOURCE WALLS - SPECIAL
+
+    public static final RegistryObject<Block> CONNECTABLE_SEA_LANTERN_WALL = registerBlock("connectable_sea_lantern_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.WOOD)
+                            .strength(0.3f)
+                            .explosionResistance(0.3f)
+                            .lightLevel(value -> 15)),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
     
     
 
