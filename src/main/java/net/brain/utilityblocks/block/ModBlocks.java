@@ -1,8 +1,7 @@
-package net.brain.block;
+package net.brain.utilityblocks.block;
 
-import net.brain.block.custom.ConnectableWallBlock;
-import net.brain.block.custom.ModWallBlock;
-import net.brain.block.custom.PotionBlock;
+import net.brain.utilityblocks.block.custom.ModWallBlock;
+import net.brain.utilityblocks.block.custom.PotionBlock;
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;

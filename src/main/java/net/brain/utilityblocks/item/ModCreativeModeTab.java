@@ -1,6 +1,6 @@
 package net.brain.utilityblocks.item;
 
-import net.brain.block.ModBuildingBlocks;
+import net.brain.utilityblocks.block.ModBuildingBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
