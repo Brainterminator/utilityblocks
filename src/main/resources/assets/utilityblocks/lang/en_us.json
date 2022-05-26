@@ -53,7 +53,8 @@
   "tooltip.utilityblocks.dowsing_rod.tooltip.shift": "Right Click to find Valuables",
   "tooltip.utilityblocks.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
 
-  "tooltip.utilityblocks.block.beamup_block": "Caution! This will throw you in the sky and will not negotiate fall damage. It will not throw you up while sneaking",
+  "tooltip.utilityblocks.block.beamup_block": "§eCaution!§r This will throw you in the sky and will not negotiate fall damage! It will not throw you up while sneaking",
+  "tooltip.utilityblocks.block.slingshot_block_1": "§eCaution!§r This will probably not work on servers!",
 
 
 

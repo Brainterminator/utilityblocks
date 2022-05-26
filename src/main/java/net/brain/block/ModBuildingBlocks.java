@@ -9,6 +9,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,7 +33,8 @@ public class ModBuildingBlocks {
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.METAL)
                             .requiresCorrectToolForDrops()
-                            .strength(5f)),
+                            .strength(5f)
+                            .sound(SoundType.METAL)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
 
@@ -46,7 +48,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_COBBLESTONE_WALL = registerBlock("connectable_cobblestone_wall",
@@ -54,7 +57,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_DEEPSLATE_WALL = registerBlock("connectable_deepslate_wall",
@@ -62,7 +66,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_COBBLED_DEEPSLATE_WALL = registerBlock("connectable_cobbled_deepslate_wall",
@@ -70,7 +75,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_POLISHED_DEEPSLATE_WALL = registerBlock("connectable_polished_deepslate_wall",
@@ -78,7 +84,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(2f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_GRANITE_WALL = registerBlock("connectable_granite_wall",
@@ -86,7 +93,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_POLISHED_GRANITE_WALL = registerBlock("connectable_polished_granite_wall",
@@ -94,7 +102,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_DIORITE_WALL = registerBlock("connectable_diorite_wall",
@@ -102,7 +111,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_POLISHED_DIORITE_WALL = registerBlock("connectable_polished_diorite_wall",
@@ -110,7 +120,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_ANDESITE_WALL = registerBlock("connectable_andesite_wall",
@@ -118,7 +129,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_POLISHED_ANDESITE_WALL = registerBlock("connectable_polished_andesite_wall",
@@ -126,7 +138,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.STONE)
                             .strength(1.5f)
                             .explosionResistance(6f)
-                            .requiresCorrectToolForDrops()),
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     // VANILLA RESSOURCE WALLS - WOODS
@@ -135,56 +148,64 @@ public class ModBuildingBlocks {
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_SPRUCE_PLANK_WALL = registerBlock("connectable_spruce_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_BIRCH_PLANK_WALL = registerBlock("connectable_birch_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_JUNGLE_PLANK_WALL = registerBlock("connectable_jungle_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_ACACIA_PLANK_WALL = registerBlock("connectable_acacia_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_DARK_OAK_PLANK_WALL = registerBlock("connectable_dark_oak_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_CRIMSON_PLANK_WALL = registerBlock("connectable_crimson_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_WARPED_PLANK_WALL = registerBlock("connectable_warped_plank_wall",
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(2f)
-                            .explosionResistance(3f)),
+                            .explosionResistance(3f)
+                            .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     // VANILLA RESSOURCE WALLS - SPECIAL
