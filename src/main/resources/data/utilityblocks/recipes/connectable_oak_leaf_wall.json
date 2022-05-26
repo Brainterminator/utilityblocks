@@ -1,0 +1,17 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_leaves"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:connectable_oak_leaf_wall",
+    "count": 6
+  }
+}

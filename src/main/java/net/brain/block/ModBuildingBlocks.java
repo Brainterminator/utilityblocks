@@ -197,6 +197,20 @@ public class ModBuildingBlocks {
                             .lightLevel(value -> 15)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
+    public static final RegistryObject<Block> CONNECTABLE_OAK_LEAF_WALL = registerBlock("connectable_oak_leaf_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.LEAVES)
+                            .strength(0.2f)
+                            .explosionResistance(0.2f)),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_BIRCH_LEAF_WALL = registerBlock("connectable_birch_leaf_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.LEAVES)
+                            .strength(0.2f)
+                            .explosionResistance(0.2f)),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
     
     
 
