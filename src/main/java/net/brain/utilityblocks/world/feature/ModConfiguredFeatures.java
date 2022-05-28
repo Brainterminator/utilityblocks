@@ -1,6 +1,6 @@
 package net.brain.utilityblocks.world.feature;
 
-import net.brain.block.ModBlocks;
+import net.brain.utilityblocks.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;

@@ -1,8 +1,8 @@
 package net.brain.utilityblocks;
 
 import com.mojang.logging.LogUtils;
-import net.brain.block.ModBlocks;
-import net.brain.block.ModBuildingBlocks;
+import net.brain.utilityblocks.block.ModBlocks;
+import net.brain.utilityblocks.block.ModBuildingBlocks;
 import net.brain.utilityblocks.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;

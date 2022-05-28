@@ -1,6 +1,6 @@
-package net.brain.block;
+package net.brain.utilityblocks.block;
 
-import net.brain.block.custom.ConnectableWallBlock;
+import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;

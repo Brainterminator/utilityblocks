@@ -1,4 +1,4 @@
-package net.brain.block.custom;
+package net.brain.utilityblocks.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
