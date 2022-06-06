@@ -222,7 +222,8 @@ public class ModBuildingBlocks {
             () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.LEAVES)
                             .strength(0.2f)
-                            .explosionResistance(0.2f)),
+                            .explosionResistance(0.2f)
+                            .sound(SoundType.GRASS)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     
