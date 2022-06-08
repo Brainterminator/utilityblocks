@@ -1,5 +1,6 @@
 package net.brain.utilityblocks.block;
 
+import net.brain.utilityblocks.block.custom.ConnectableLampWallBlock;
 import net.brain.utilityblocks.block.custom.ConnectableLeafWallBlock;
 import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
 import net.brain.utilityblocks.UtilityBlocks;
@@ -212,11 +213,11 @@ public class ModBuildingBlocks {
     // VANILLA RESSOURCE WALLS - SPECIAL
 
     public static final RegistryObject<Block> CONNECTABLE_SEA_LANTERN_WALL = registerBlock("connectable_sea_lantern_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+            () -> new ConnectableLampWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(0.3f)
                             .explosionResistance(0.3f)
-                            .lightLevel(value -> 15)
+                            .lightLevel((state) -> state.getValue(ConnectableLampWallBlock.CLICKED) ? 15 : 0)
                             .sound(SoundType.GLASS)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
