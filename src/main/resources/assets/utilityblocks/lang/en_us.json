@@ -83,5 +83,9 @@
   "block.utilityblocks.connectable_acacia_plank_wall": "Connectable Acacia Plank Wall",
   "block.utilityblocks.connectable_dark_oak_plank_wall": "Connectable Dark Oak Plank Wall",
   "block.utilityblocks.connectable_crimson_plank_wall": "Connectable Crimson Plank Wall",
-  "block.utilityblocks.connectable_warped_plank_wall": "Connectable Warped Plank Wall"
+  "block.utilityblocks.connectable_warped_plank_wall": "Connectable Warped Plank Wall",
+
+  "block.utilityblocks.connectable_sea_lantern_wall": "Connectable Sea Lantern Wall",
+
+  "block.utilityblocks.connectable_oak_leaf_wall": "Connectable Oak Leaf Wall"
 }

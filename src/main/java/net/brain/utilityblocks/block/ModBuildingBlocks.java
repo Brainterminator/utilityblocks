@@ -1,5 +1,6 @@
 package net.brain.utilityblocks.block;
 
+import net.brain.utilityblocks.block.custom.ConnectableLeafWallBlock;
 import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
@@ -208,10 +209,31 @@ public class ModBuildingBlocks {
                             .sound(SoundType.WOOD)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
-    
-    
+    // VANILLA RESSOURCE WALLS - SPECIAL
 
-    
+    public static final RegistryObject<Block> CONNECTABLE_SEA_LANTERN_WALL = registerBlock("connectable_sea_lantern_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.WOOD)
+                            .strength(0.3f)
+                            .explosionResistance(0.3f)
+                            .lightLevel(value -> 15)
+                            .sound(SoundType.GLASS)),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_OAK_LEAF_WALL = registerBlock("connectable_oak_leaf_wall",
+            () -> new ConnectableLeafWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.LEAVES)
+                            .strength(0.2f)
+                            .explosionResistance(0.2f)
+                            .sound(SoundType.GRASS)
+                            .noOcclusion()
+            ),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab,
                                                                      String tooltipKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

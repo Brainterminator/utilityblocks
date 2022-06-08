@@ -46,8 +46,8 @@ public class UtilityBlocks
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_BUTTON.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_PRESSURE_PLATE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_TRAPDOOR.get(), RenderType.translucent());
-    }
 
+    }
 
     private void setup(final FMLCommonSetupEvent event)
     {
@@ -55,4 +55,6 @@ public class UtilityBlocks
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+
+
 }

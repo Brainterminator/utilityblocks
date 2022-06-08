@@ -140,7 +140,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .jumpFactor( 4.5F)
                     .strength(0.5f)
-                    .sound(SoundType.STONE)),
+                    .sound(SoundType.STONE)
+                    .noOcclusion()),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
