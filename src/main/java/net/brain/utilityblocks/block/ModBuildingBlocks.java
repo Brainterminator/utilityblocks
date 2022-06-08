@@ -1,5 +1,6 @@
 package net.brain.utilityblocks.block;
 
+import net.brain.utilityblocks.block.custom.ConnectableLeafWallBlock;
 import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
@@ -220,7 +221,7 @@ public class ModBuildingBlocks {
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_OAK_LEAF_WALL = registerBlock("connectable_oak_leaf_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+            () -> new ConnectableLeafWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of(Material.LEAVES)
                             .strength(0.2f)
                             .explosionResistance(0.2f)
