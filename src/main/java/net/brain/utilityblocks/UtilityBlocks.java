@@ -46,7 +46,6 @@ public class UtilityBlocks
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_BUTTON.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_PRESSURE_PLATE.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_TRAPDOOR.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.CONNECTABLE_OAK_LEAF_WALL.get(), RenderType.cutout());
 
     }
 
