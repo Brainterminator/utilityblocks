@@ -215,7 +215,8 @@ public class ModBuildingBlocks {
                     BlockBehaviour.Properties.of(Material.WOOD)
                             .strength(0.3f)
                             .explosionResistance(0.3f)
-                            .lightLevel(value -> 15)),
+                            .lightLevel(value -> 15)
+                            .sound(SoundType.GLASS)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_OAK_LEAF_WALL = registerBlock("connectable_oak_leaf_wall",
@@ -226,10 +227,10 @@ public class ModBuildingBlocks {
                             .sound(SoundType.GRASS)),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
 
-    
-    
 
-    
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab,
                                                                      String tooltipKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
