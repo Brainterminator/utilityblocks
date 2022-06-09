@@ -2,25 +2,31 @@ package net.brain.utilityblocks.item;
 
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.item.custom.DowsingRodItem;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, UtilityBlocks.MOD_ID);
 
-    public static final RegistryObject<Item> UTILIUM = ITEMS.register("utilium",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
+
+    // RESOURCES
+
 
     public static final RegistryObject<Item> UTILIUM_FRAGMENTS = ITEMS.register("utilium_fragments",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+    public static final RegistryObject<Item> UTILIUM = ITEMS.register("utilium",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
 
-    public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
-            () -> new DowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB).durability(16)));
+    // FOOD
 
 
     public static final RegistryObject<Item> RAW_TOASTY = ITEMS.register("raw_toasty",
@@ -31,6 +37,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOASTY_SANDWICH = ITEMS.register("toasty_sandwich",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB).food(ModFoods.TOASTY_SANDWICH)));
+
+
+    //TOOLS
 
 
     public static final RegistryObject<Item> UTILIUM_SWORD = ITEMS.register("utilium_sword",
@@ -47,6 +56,30 @@ public class ModItems {
 
     public static final RegistryObject<Item> UTILIUM_HOE = ITEMS.register("utilium_hoe",
             () -> new HoeItem(ModTiers.UTILIUM, -2,-1.0f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
+    public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
+            () -> new DowsingRodItem(new Item.Properties().durability(16).tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)){
+                @Override
+                public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+                    return 200;
+                }
+            });
+
+
+    //ARMOR
+
+
+    public static final RegistryObject<Item> UTILIUM_HELMET = ITEMS.register("utilium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
+    public static final RegistryObject<Item> UTILIUM_CHESTPLATE = ITEMS.register("utilium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
+    public static final RegistryObject<Item> UTILIUM_LEGGINGS = ITEMS.register("utilium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
+    public static final RegistryObject<Item> UTILIUM_BOOTS = ITEMS.register("utilium_boots",
+            () -> new ArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
 
 

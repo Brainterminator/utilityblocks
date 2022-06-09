@@ -28,8 +28,8 @@ public class UtilityBlocks
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModItems.register(eventBus);
         ModBuildingBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
@@ -41,11 +41,11 @@ public class UtilityBlocks
 
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_DOOR.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_WALL.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_BUTTON.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_PRESSURE_PLATE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GLASS_TRAPDOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_DOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_WALL.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_BUTTON.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_PRESSURE_PLATE.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_TRAPDOOR.get(), RenderType.translucent());
 
     }
 

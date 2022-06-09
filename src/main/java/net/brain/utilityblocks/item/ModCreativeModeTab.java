@@ -15,7 +15,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab BUILDING_BLOCKS_TAB = new CreativeModeTab("buildingblocks") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModBuildingBlocks.CONNECTABLE_UTILIUM_WALL.get());
+            return new ItemStack(ModBuildingBlocks.CONNECTABLE_OAK_PLANK_WALL.get());
         }
     };
 }

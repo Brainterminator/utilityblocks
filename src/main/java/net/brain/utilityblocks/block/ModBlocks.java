@@ -1,5 +1,6 @@
 package net.brain.utilityblocks.block;
 
+import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
 import net.brain.utilityblocks.block.custom.ModWallBlock;
 import net.brain.utilityblocks.block.custom.PotionBlock;
 import net.brain.utilityblocks.UtilityBlocks;
@@ -26,12 +27,63 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, UtilityBlocks.MOD_ID);
 
+
+    // PURE UTILIUM BLOCKS
+
     public static final RegistryObject<Block> UTILIUM_BLOCK = registerBlock("utilium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
                     .sound(SoundType.METAL)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_STAIRS = registerBlock("utilium_stairs",
+            () -> new StairBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.METAL)
+                            .requiresCorrectToolForDrops()
+                            .strength(5f)
+                            .sound(SoundType.METAL)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_SLAB = registerBlock("utilium_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(5f)
+                    .sound(SoundType.METAL)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_FENCE = registerBlock("utilium_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(5f)
+                    .sound(SoundType.METAL)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_FENCE_GATE = registerBlock("utilium_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(5f)
+                    .sound(SoundType.METAL)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_WALL = registerBlock("utilium_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .requiresCorrectToolForDrops()
+                    .strength(5f)
+                    .sound(SoundType.METAL)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> CONNECTABLE_UTILIUM_WALL = registerBlock("connectable_utilium_wall",
+            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.METAL)
+                            .requiresCorrectToolForDrops()
+                            .strength(5f)
+                            .sound(SoundType.METAL)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+
+    // ORES
+
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
@@ -47,6 +99,9 @@ public class ModBlocks {
                     .sound(SoundType.STONE)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
+
+
+    // UTILITY BLOCKS - SPEEDUP
 
 
 
@@ -93,12 +148,7 @@ public class ModBlocks {
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
-    public static final RegistryObject<Block> SLINGSHOT_BLOCK_1 = registerBlock("slingshot_block_1",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .friction(5f)
-                    .strength(1f)
-                    .sound(SoundType.STONE)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.slingshot_block_1");
+    // UTILITY BLOCKS - JUMP
 
 
     public static final RegistryObject<Block> JUMPUP_BLOCK_1 = registerBlock("jumpup_block_1",
@@ -145,7 +195,26 @@ public class ModBlocks {
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
-/*
+    // ADVANCED UTILITY BLOCKS
+
+
+    public static final RegistryObject<Block> SLINGSHOT_BLOCK_1 = registerBlock("slingshot_block_1",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .friction(5f)
+                    .strength(1f)
+                    .sound(SoundType.STONE)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.slingshot_block_1");
+
+    public static final RegistryObject<Block> BEAMUP_BLOCK = registerBlock("beamup_block",
+            () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(1f)
+                    .sound(SoundType.STONE)
+                    ,MobEffects.LEVITATION,60,80),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.beamup_block");
+
+    /*
+            NOT IMPLEMENTED BLOCK IDEAS
+
     public static final RegistryObject<Block> INVISIBILITY_BLOCK = registerBlock("invisibility_block",
             () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(0.5f)
@@ -159,85 +228,7 @@ public class ModBlocks {
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 */
 
-    public static final RegistryObject<Block> BEAMUP_BLOCK = registerBlock("beamup_block",
-            () -> new PotionBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(1f)
-                    .sound(SoundType.STONE)
-                    ,MobEffects.LEVITATION,60,80),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.beamup_block");
 
-
-
-    public static final RegistryObject<Block> UTILIUM_STAIRS = registerBlock("utilium_stairs",
-            () -> new StairBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.METAL)
-                    .requiresCorrectToolForDrops()
-                    .strength(5f)
-                    .sound(SoundType.METAL)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> UTILIUM_SLAB = registerBlock("utilium_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .requiresCorrectToolForDrops()
-                    .strength(5f)
-                    .sound(SoundType.METAL)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> UTILIUM_FENCE = registerBlock("utilium_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .requiresCorrectToolForDrops()
-                    .strength(5f)
-                    .sound(SoundType.METAL)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> UTILIUM_FENCE_GATE = registerBlock("utilium_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .requiresCorrectToolForDrops()
-                    .strength(5f)
-                    .sound(SoundType.METAL)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> UTILIUM_WALL = registerBlock("utilium_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .requiresCorrectToolForDrops()
-                    .strength(5f)
-                    .sound(SoundType.METAL)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-
-    public static final RegistryObject<Block> GLASS_BUTTON = registerBlock("glass_button",
-            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.GLASS)
-                    .strength(0.3f)
-                    .sound(SoundType.GLASS)
-                    .noCollission()),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> GLASS_PRESSURE_PLATE = registerBlock("glass_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.GLASS)
-                    .strength(0.3f)
-                    .sound(SoundType.GLASS)),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> GLASS_DOOR = registerBlock("glass_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
-                    .strength(0.3f)
-                    .sound(SoundType.GLASS)
-                    .noOcclusion()),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> GLASS_TRAPDOOR = registerBlock("glass_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
-                   .strength(0.3f)
-                  .sound(SoundType.GLASS)
-                   .noOcclusion()),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
-
-    public static final RegistryObject<Block> GLASS_WALL = registerBlock("glass_wall",
-            () -> new ModWallBlock(BlockBehaviour.Properties.of(Material.GLASS)
-                    .strength(0.3f)
-                    .sound(SoundType.GLASS)
-                    .noOcclusion()),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab,

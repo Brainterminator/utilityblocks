@@ -4,14 +4,14 @@ import net.brain.utilityblocks.block.custom.ConnectableLampWallBlock;
 import net.brain.utilityblocks.block.custom.ConnectableLeafWallBlock;
 import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
 import net.brain.utilityblocks.UtilityBlocks;
+import net.brain.utilityblocks.block.custom.ModWallBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,20 +26,6 @@ import java.util.function.Supplier;
 public class ModBuildingBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, UtilityBlocks.MOD_ID);
-
-    
-    
-    // MOD RESSOURCE WALLS
-    
-    public static final RegistryObject<Block> CONNECTABLE_UTILIUM_WALL = registerBlock("connectable_utilium_wall",
-            () -> new ConnectableWallBlock(() -> ModBlocks.UTILIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of(Material.METAL)
-                            .requiresCorrectToolForDrops()
-                            .strength(5f)
-                            .sound(SoundType.METAL)),
-            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
-
-
 
 
 
@@ -230,6 +216,44 @@ public class ModBuildingBlocks {
                             .noOcclusion()
             ),
             ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+
+    // ADITIONAL GLASS STUFF
+
+    public static final RegistryObject<Block> GLASS_BUTTON = registerBlock("glass_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noCollission()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_PRESSURE_PLATE = registerBlock("glass_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_DOOR = registerBlock("glass_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_TRAPDOOR = registerBlock("glass_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> GLASS_WALL = registerBlock("glass_wall",
+            () -> new ModWallBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .strength(0.3f)
+                    .sound(SoundType.GLASS)
+                    .noOcclusion()),
+            ModCreativeModeTab.BUILDING_BLOCKS_TAB);
+
 
 
 
