@@ -2,6 +2,7 @@ package net.brain.utilityblocks.item;
 
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.item.custom.DowsingRodItem;
+import net.brain.utilityblocks.item.custom.ConfusionSwordItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -43,7 +44,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> UTILIUM_SWORD = ITEMS.register("utilium_sword",
-            () -> new SwordItem(ModTiers.UTILIUM, 3,-2.4F, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+            () -> new ConfusionSwordItem(ModTiers.UTILIUM, 3,-2.4F, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
     public static final RegistryObject<Item> UTILIUM_PICKAXE = ITEMS.register("utilium_pickaxe",
             () -> new PickaxeItem(ModTiers.UTILIUM, 1,-2.8f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
@@ -70,7 +71,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> UTILIUM_HELMET = ITEMS.register("utilium_helmet",
-            () -> new ArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+            () -> new ModArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
     public static final RegistryObject<Item> UTILIUM_CHESTPLATE = ITEMS.register("utilium_chestplate",
             () -> new ArmorItem(ModArmorMaterials.UTILIUM, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
