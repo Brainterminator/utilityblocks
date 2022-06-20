@@ -101,6 +101,23 @@ public class ModBlocks {
 
 
 
+
+    //  WORLD GEN
+
+
+
+    public static final RegistryObject<Block> LAVENDER = registerBlock("lavender",
+            () -> new FlowerBlock(MobEffects.LEVITATION, 8, BlockBehaviour.Properties.copy(Blocks.DANDELION)
+                    .noOcclusion()),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
+            () -> new FlowerPotBlock(null, ModBlocks.LAVENDER , BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)
+                    .noOcclusion()));
+
+
+
+
     // UTILITY BLOCKS - SPEEDUP
 
 
@@ -235,6 +252,11 @@ public class ModBlocks {
                                                                      String tooltipKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab, tooltipKey);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
         return toReturn;
     }
 
