@@ -1,16 +1,16 @@
 package net.brain.utilityblocks.item;
 
 import net.brain.utilityblocks.UtilityBlocks;
+import net.brain.utilityblocks.item.custom.UtiliumRuneItem;
 import net.brain.utilityblocks.item.custom.DowsingRodItem;
 import net.brain.utilityblocks.item.custom.ConfusionSwordItem;
+import net.brain.utilityblocks.item.custom.ModArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.Nullable;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -59,12 +59,10 @@ public class ModItems {
             () -> new HoeItem(ModTiers.UTILIUM, -2,-1.0f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
     public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
-            () -> new DowsingRodItem(new Item.Properties().durability(16).tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)){
-                @Override
-                public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-                    return 200;
-                }
-            });
+            () -> new DowsingRodItem(new Item.Properties().durability(48).tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
+    public static final RegistryObject<Item> UTILIUM_RUNE = ITEMS.register("utilium_rune",
+            () -> new UtiliumRuneItem(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB).stacksTo(1)));
 
 
     //ARMOR

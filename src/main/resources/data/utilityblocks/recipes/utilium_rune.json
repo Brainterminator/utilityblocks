@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  X",
     " # ",
-    "#  "
+    "#X#",
+    " # "
   ],
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "item": "minecraft:redstone"
     },
     "X": {
-      "item": "utilityblocks:utilium_rune"
+      "item": "utilityblocks:utilium"
     }
   },
   "result": {
-    "item": "utilityblocks:dowsing_rod"
+    "item": "utilityblocks:utilium_rune"
   }
 }

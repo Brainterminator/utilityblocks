@@ -1,9 +1,12 @@
 package net.brain.utilityblocks.item.custom;
 
+import net.brain.utilityblocks.item.ModItems;
+import net.brain.utilityblocks.util.InventoryUtil;
 import net.brain.utilityblocks.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -39,6 +42,11 @@ public class DowsingRodItem extends Item {
                 if(isValuableBlock(blockBelow)) {
                     outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
                     foundBlock = true;
+
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.UTILIUM_RUNE.get())) {
+                        addNbtToDataTablet(player, positionClicked.below(i), blockBelow);
+                    }
+
                     break;
                 }
             }
@@ -54,7 +62,7 @@ public class DowsingRodItem extends Item {
     }
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow) {
-        player.sendMessage(new TextComponent("Found" + blockBelow.asItem().getRegistryName().toString() + " at " +
+        player.sendMessage(new TextComponent("Found " + blockBelow.asItem().getRegistryName().toString() + " at " +
                 "(" + blockPos.getX() + "," + blockPos.getY() + "," + blockPos.getZ() + ")"), player.getUUID());
     }
 
@@ -62,9 +70,24 @@ public class DowsingRodItem extends Item {
         return Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).is(ModTags.Blocks.DOWSING_ROD_VALUABLES);
     }
 
-    @Override
-    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
-        return 300;
+    private void addNbtToDataTablet(Player player, BlockPos pos, Block blockBelow) {
+        ItemStack dataTablet =
+                player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.UTILIUM_RUNE.get()));
+
+        if(!dataTablet.hasTag()) {
+            CompoundTag nbtData = new CompoundTag();
+            nbtData.putString("utilityblocks.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
+                    pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+
+            dataTablet.setTag(nbtData);
+        }
+        else{
+            CompoundTag nbtData = dataTablet.getTag();
+            nbtData.putString("utilityblocks.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
+                    pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+
+            dataTablet.setTag(nbtData);
+        }
     }
 
     @Override
@@ -74,5 +97,10 @@ public class DowsingRodItem extends Item {
         } else {
             pTooltipComponents.add(new TranslatableComponent("tooltip.utilityblocks.dowsing_rod.tooltip"));
         }
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+        return 200;
     }
 }
