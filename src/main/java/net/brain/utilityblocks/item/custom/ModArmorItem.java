@@ -1,4 +1,4 @@
-package net.brain.utilityblocks.item;
+package net.brain.utilityblocks.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.brain.utilityblocks.item.ModArmorMaterials;
