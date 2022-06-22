@@ -31,7 +31,7 @@ public class DowsingRodItem extends Item {
     @Override
 
     public InteractionResult useOn(UseOnContext pContext) {
-        if(pContext.getLevel().isClientSide()){
+        if(true){
             BlockPos positionClicked = pContext.getClickedPos();
             Player player =pContext.getPlayer();
             boolean foundBlock = false;
