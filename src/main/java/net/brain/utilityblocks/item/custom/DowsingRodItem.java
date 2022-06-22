@@ -40,7 +40,7 @@ public class DowsingRodItem extends Item {
                 Block blockBelow = pContext.getLevel().getBlockState(positionClicked.below(i)).getBlock();
 
                 if(isValuableBlock(blockBelow)) {
-                    outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
+                    if(pContext.getLevel().isClientSide())outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
                     foundBlock = true;
 
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.UTILIUM_RUNE.get())) {
@@ -50,7 +50,7 @@ public class DowsingRodItem extends Item {
                     break;
                 }
             }
-            if(!foundBlock) {
+            if(!foundBlock && pContext.getLevel().isClientSide()) {
                 player.sendMessage(new TranslatableComponent("item.utilityblocks.dowsing_rod.no_valuables"),
                         player.getUUID());
             }
