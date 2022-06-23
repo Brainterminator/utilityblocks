@@ -5,6 +5,7 @@ import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.block.ModBuildingBlocks;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.painting.ModPaintings;
+import net.brain.utilityblocks.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -45,6 +46,8 @@ public class UtilityBlocks
 
 
     private void clientSetup(final FMLClientSetupEvent event) {
+        ModItemProperties.addCustomItemProperties();
+
         ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_DOOR.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_WALL.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModBuildingBlocks.GLASS_BUTTON.get(), RenderType.translucent());

@@ -1,0 +1,6 @@
+{
+    "parent": "utilityblocks:item/utilium_bow",
+    "textures": {
+        "layer0": "utilityblocks:item/utilium_bow_pulling_0"
+    }
+}

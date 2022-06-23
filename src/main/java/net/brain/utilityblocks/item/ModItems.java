@@ -58,6 +58,9 @@ public class ModItems {
     public static final RegistryObject<Item> UTILIUM_HOE = ITEMS.register("utilium_hoe",
             () -> new HoeItem(ModTiers.UTILIUM, -2,-1.0f, new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
+    public static final RegistryObject<Item> UTILIUM_BOW = ITEMS.register("utilium_bow",
+            () -> new BowItem(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB).durability(1420)));
+
     public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
             () -> new DowsingRodItem(new Item.Properties().durability(48).tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
