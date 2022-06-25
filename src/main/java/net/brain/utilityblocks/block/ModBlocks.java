@@ -1,11 +1,12 @@
 package net.brain.utilityblocks.block;
 
 import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
-import net.brain.utilityblocks.block.custom.ModWallBlock;
 import net.brain.utilityblocks.block.custom.PotionBlock;
 import net.brain.utilityblocks.UtilityBlocks;
+import net.brain.utilityblocks.block.custom.UtiliumPlantBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
+import net.brain.utilityblocks.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
@@ -34,7 +35,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
-                    .sound(SoundType.METAL)),
+                    .sound(ModSounds.UTILIUM)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_STAIRS = registerBlock("utilium_stairs",
@@ -42,35 +43,35 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of(Material.METAL)
                             .requiresCorrectToolForDrops()
                             .strength(5f)
-                            .sound(SoundType.METAL)),
+                            .sound(ModSounds.UTILIUM)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_SLAB = registerBlock("utilium_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
-                    .sound(SoundType.METAL)),
+                    .sound(ModSounds.UTILIUM)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_FENCE = registerBlock("utilium_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
-                    .sound(SoundType.METAL)),
+                    .sound(ModSounds.UTILIUM)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_FENCE_GATE = registerBlock("utilium_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
-                    .sound(SoundType.METAL)),
+                    .sound(ModSounds.UTILIUM)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_WALL = registerBlock("utilium_wall",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
-                    .sound(SoundType.METAL)),
+                    .sound(ModSounds.UTILIUM)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> CONNECTABLE_UTILIUM_WALL = registerBlock("connectable_utilium_wall",
@@ -78,7 +79,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of(Material.METAL)
                             .requiresCorrectToolForDrops()
                             .strength(5f)
-                            .sound(SoundType.METAL)),
+                            .sound(ModSounds.UTILIUM)),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
@@ -114,6 +115,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_LAVENDER = registerBlockWithoutItem("potted_lavender",
             () -> new FlowerPotBlock(null, ModBlocks.LAVENDER , BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)
                     .noOcclusion()));
+
+    public static final RegistryObject<Block> UTILIUM_PLANT = registerBlockWithoutItem("utilium_plant",
+            () -> new UtiliumPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
 
 

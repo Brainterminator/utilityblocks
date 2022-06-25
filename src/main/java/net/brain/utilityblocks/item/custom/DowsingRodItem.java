@@ -1,8 +1,11 @@
 package net.brain.utilityblocks.item.custom;
 
+import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.item.ModItems;
+import net.brain.utilityblocks.sound.ModSounds;
 import net.brain.utilityblocks.util.InventoryUtil;
 import net.brain.utilityblocks.util.ModTags;
+import net.minecraft.Util;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
@@ -10,6 +13,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -19,6 +23,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -46,6 +51,7 @@ public class DowsingRodItem extends Item {
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.UTILIUM_RUNE.get())) {
                         addNbtToDataTablet(player, positionClicked.below(i), blockBelow);
                     }
+                    pContext.getLevel().playSound(player, positionClicked, ModSounds.DOWSING_ROD_FOUND_ORE.get(), SoundSource.BLOCKS, 1, 0.001f);
 
                     break;
                 }
@@ -62,12 +68,20 @@ public class DowsingRodItem extends Item {
     }
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow) {
-        player.sendMessage(new TextComponent("Found " + blockBelow.asItem().getRegistryName().toString() + " at " +
-                "(" + blockPos.getX() + "," + blockPos.getY() + "," + blockPos.getZ() + ")"), player.getUUID());
+        player.sendMessage(new TextComponent(oreLocation(blockPos, WhichValuableBlock(blockBelow))), player.getUUID());
     }
 
     private boolean isValuableBlock(Block block){
         return Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).is(ModTags.Blocks.DOWSING_ROD_VALUABLES);
+    }
+    private int WhichValuableBlock(Block block){
+        if(block == Blocks.IRON_ORE || block == Blocks.DEEPSLATE_IRON_ORE) return 1;
+        if(block == Blocks.GOLD_ORE || block == Blocks.DEEPSLATE_GOLD_ORE) return 2;
+        if(block == Blocks.DIAMOND_ORE || block == Blocks.DEEPSLATE_DIAMOND_ORE) return 3;
+        if(block == Blocks.LAPIS_ORE || block == Blocks.DEEPSLATE_LAPIS_ORE) return 4;
+        if(block == Blocks.EMERALD_ORE || block == Blocks.DEEPSLATE_EMERALD_ORE) return 5;
+        if(block == ModBlocks.UTILIUM_ORE.get() || block == ModBlocks.DEEPSLATE_UTILIUM_ORE.get()) return 6;
+        return 0;
     }
 
     private void addNbtToDataTablet(Player player, BlockPos pos, Block blockBelow) {
@@ -76,18 +90,39 @@ public class DowsingRodItem extends Item {
 
         if(!dataTablet.hasTag()) {
             CompoundTag nbtData = new CompoundTag();
-            nbtData.putString("utilityblocks.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
-                    pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+            nbtData.putString("utilityblocks.last_ore", oreLocation(pos, WhichValuableBlock(blockBelow)));
 
             dataTablet.setTag(nbtData);
         }
         else{
             CompoundTag nbtData = dataTablet.getTag();
-            nbtData.putString("utilityblocks.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
-                    pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+            nbtData.putString("utilityblocks.last_ore", oreLocation(pos, WhichValuableBlock(blockBelow)));
 
             dataTablet.setTag(nbtData);
         }
+    }
+
+    public String oreLocation(BlockPos pos, int valuableID){
+        if(valuableID==1){
+            return "Found Iron Ore at " + "(" + pos.getX() + "," + pos.getY() + "," + pos.getZ() + ")";
+        }
+        if(valuableID==2){
+            return "Found Gold Ore at " + "(" + pos.getX() + "," + pos.getY() + "," + pos.getZ() + ")";
+        }
+        if(valuableID==3){
+            return "Found Diamond Ore at " + "(" + pos.getX() + "," + pos.getY() + "," + pos.getZ() + ")";
+        }
+        if(valuableID==4){
+            return "Found Lapis Ore at " + "(" + pos.getX() + "," + pos.getY() + "," + pos.getZ() + ")";
+        }
+        if(valuableID==5){
+            return "Found Emerald Ore at " + "(" + pos.getX() + "," + pos.getY() + "," + pos.getZ() + ")";
+        }
+        if(valuableID==6){
+            return "Found Utilium Ore at " + "(" + pos.getX() + "," + pos.getY() + "," + pos.getZ() + ")";
+        }
+        return "";
+
     }
 
     @Override

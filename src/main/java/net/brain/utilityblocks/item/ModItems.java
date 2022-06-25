@@ -1,10 +1,12 @@
 package net.brain.utilityblocks.item;
 
 import net.brain.utilityblocks.UtilityBlocks;
+import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.item.custom.UtiliumRuneItem;
 import net.brain.utilityblocks.item.custom.DowsingRodItem;
 import net.brain.utilityblocks.item.custom.ConfusionSwordItem;
 import net.brain.utilityblocks.item.custom.ModArmorItem;
+import net.brain.utilityblocks.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +24,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> UTILIUM_FRAGMENTS = ITEMS.register("utilium_fragments",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+            () -> new ItemNameBlockItem(ModBlocks.UTILIUM_PLANT.get(), new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
     public static final RegistryObject<Item> UTILIUM = ITEMS.register("utilium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
 
@@ -38,6 +40,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOASTY_SANDWICH = ITEMS.register("toasty_sandwich",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB).food(ModFoods.TOASTY_SANDWICH)));
+
+
+    //MISC
+
+
+
+    public static final RegistryObject<Item> PYRAMID_PERIL_DISC = ITEMS.register("pyramid_peril_disc",
+            () -> new RecordItem(4, ModSounds.PYRAMID_PERIL, new Item.Properties()
+                    .stacksTo(1).tab(ModCreativeModeTab.UTILITY_BLOCKS_TAB)));
+
 
 
     //TOOLS

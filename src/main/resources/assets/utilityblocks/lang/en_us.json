@@ -9,6 +9,9 @@
   "item.utilityblocks.raw_toasty": "Raw Toasty",
   "item.utilityblocks.toasty_sandwich": "Toasty Sandwich",
 
+  "item.utilityblocks.pyramid_peril_disc": "Pyramid Peril Disc",
+  "item.utilityblocks.pyramid_peril_disc.desc": "Kristofer Maddigan - Pyramid Peril",
+
   "item.utilityblocks.utilium_sword": "Utilium Sword",
   "item.utilityblocks.utilium_pickaxe": "Utilium Pickaxe",
   "item.utilityblocks.utilium_shovel": "Utilium Shovel",
@@ -27,6 +30,7 @@
 
   "block.utilityblocks.lavender": "Lavender",
   "block.utilityblocks.potted_lavender": "Potted Lavender",
+  "block.utilityblocks.utilium_plant": "Utilium Plant",
 
   "block.utilityblocks.utilium_slab": "Utilium Slab",
   "block.utilityblocks.utilium_stairs": "Utilium Stairs",
@@ -67,6 +71,13 @@
   "tooltip.utilityblocks.block.slingshot_block_1": "§eCaution!§r This will probably not work on servers!",
 
 
+
+  "sounds.utilityblocks.dowsing_rod_found_ore":"Dowsing Rod Found Item Sound",
+  "sounds.utilityblocks.utilium_break":"Utilium Block Broken",
+  "sounds.utilityblocks.utilium_step":"Footsteps on Utilium Block",
+  "sounds.utilityblocks.utilium_place":"Utilium Block Placed",
+  "sounds.utilityblocks.utilium_hit":"Utilium Block Hit",
+  "sounds.utilityblocks.utilium_fall":"Fallen on Utilium Block",
 
 
 

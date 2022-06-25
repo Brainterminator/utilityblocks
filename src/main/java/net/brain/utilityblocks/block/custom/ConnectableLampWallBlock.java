@@ -1,8 +1,10 @@
 package net.brain.utilityblocks.block.custom;
 
+import net.brain.utilityblocks.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.MenuProvider;
@@ -178,6 +180,7 @@ public class ConnectableLampWallBlock extends Block implements SimpleWaterlogged
          boolean currentState = pState.getValue(CLICKED);
          pLevel.setBlock(pPos, pState.setValue(CLICKED, !currentState), 3);
       }
+      pLevel.playSound(pPlayer, pPos, ModSounds.FLIP_SWITCH.get(), SoundSource.BLOCKS, 1, 1);
 
       return InteractionResult.SUCCESS;
    }

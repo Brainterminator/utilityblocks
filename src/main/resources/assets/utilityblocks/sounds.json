@@ -1,0 +1,84 @@
+{
+  "dowsing_rod_found_ore": {
+    "subtitle": "sounds.utilityblocks.dowsing_rod_found_ore",
+    "sounds": [
+      "utilityblocks:dowsing_rod_found_ore"
+    ]
+  },
+  "utilium_break": {
+    "subtitle": "sounds.utilityblocks.utilium_break",
+    "sounds": [
+      "utilityblocks:utilium/break1",
+      "utilityblocks:utilium/break2",
+      "utilityblocks:utilium/break3",
+      "utilityblocks:utilium/break4"
+    ]
+  },
+  "utilium_step": {
+    "subtitle": "sounds.utilityblocks.utilium_step",
+    "sounds": [
+      "utilityblocks:utilium/step1",
+      "utilityblocks:utilium/step2",
+      "utilityblocks:utilium/step3",
+      "utilityblocks:utilium/step4",
+      "utilityblocks:utilium/step5",
+      "utilityblocks:utilium/step6",
+      "utilityblocks:utilium/step7",
+      "utilityblocks:utilium/step8",
+      "utilityblocks:utilium/step9",
+      "utilityblocks:utilium/step10",
+      "utilityblocks:utilium/step11",
+      "utilityblocks:utilium/step12",
+      "utilityblocks:utilium/step13",
+      "utilityblocks:utilium/step14"
+    ]
+  },
+  "utilium_place": {
+    "subtitle": "sounds.utilityblocks.utilium_place",
+    "sounds": [
+      "utilityblocks:utilium/place1",
+      "utilityblocks:utilium/place2",
+      "utilityblocks:utilium/place3",
+      "utilityblocks:utilium/place4"
+    ]
+  },
+  "utilium_hit": {
+    "subtitle": "sounds.utilityblocks.utilium_hit",
+    "sounds": [
+      "utilityblocks:utilium/step1",
+      "utilityblocks:utilium/step2",
+      "utilityblocks:utilium/step3",
+      "utilityblocks:utilium/step4",
+      "utilityblocks:utilium/step5",
+      "utilityblocks:utilium/step6",
+      "utilityblocks:utilium/step7",
+      "utilityblocks:utilium/step8",
+      "utilityblocks:utilium/step9",
+      "utilityblocks:utilium/step10",
+      "utilityblocks:utilium/step11",
+      "utilityblocks:utilium/step12",
+      "utilityblocks:utilium/step13",
+      "utilityblocks:utilium/step14"
+    ]
+  },
+  "utilium_fall": {
+    "subtitle": "sounds.utilityblocks.utilium_fall",
+    "sounds": [
+
+    ]
+  },
+  "flip_switch": {
+    "subtitle": "sounds.utilityblocks.flip_switch",
+    "sounds": [
+      "utilityblocks:flip_switch"
+    ]
+  },
+  "pyramid_peril": {
+    "sounds": [
+      {
+        "name": "utilityblocks:pyramid_peril",
+        "stream": true
+      }
+    ]
+  }
+}

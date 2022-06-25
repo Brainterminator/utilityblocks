@@ -5,6 +5,7 @@ import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.block.ModBuildingBlocks;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.painting.ModPaintings;
+import net.brain.utilityblocks.sound.ModSounds;
 import net.brain.utilityblocks.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -36,6 +37,7 @@ public class UtilityBlocks
         ModBuildingBlocks.register(eventBus);
 
         ModPaintings.register(eventBus);
+        ModSounds.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -56,6 +58,7 @@ public class UtilityBlocks
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LAVENDER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_LAVENDER.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.UTILIUM_PLANT.get(), RenderType.cutout());
 
     }
 
