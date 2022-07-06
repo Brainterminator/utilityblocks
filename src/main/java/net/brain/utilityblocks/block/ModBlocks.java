@@ -1,19 +1,24 @@
 package net.brain.utilityblocks.block;
 
 import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
+import net.brain.utilityblocks.block.custom.ModFlammableRotatedPillarBlock;
 import net.brain.utilityblocks.block.custom.PotionBlock;
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.block.custom.UtiliumPlantBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.sound.ModSounds;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -118,6 +123,41 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> UTILIUM_PLANT = registerBlockWithoutItem("utilium_plant",
             () -> new UtiliumPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> UTILIUM_LOG = registerBlock("utilium_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_WOOD = registerBlock("utilium_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> STRIPPED_UTILIUM_LOG = registerBlock("stripped_utilium_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> STRIPPED_UTILIUM_WOOD = registerBlock("stripped_utilium_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_PLANKS = registerBlock("utilium_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            },
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
 

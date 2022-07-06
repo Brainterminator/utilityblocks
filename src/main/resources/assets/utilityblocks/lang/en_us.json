@@ -32,6 +32,12 @@
   "block.utilityblocks.potted_lavender": "Potted Lavender",
   "block.utilityblocks.utilium_plant": "Utilium Plant",
 
+  "block.utilityblocks.utilium_log": "Utilium Log",
+  "block.utilityblocks.utilium_wood": "Utilium Wood",
+  "block.utilityblocks.stripped_utilium_log": "Stripped Utilium Log",
+  "block.utilityblocks.stripped_utilium_wood": "Stripped Utilium Wood",
+  "block.utilityblocks.utilium_planks": "Utilium Planks",
+
   "block.utilityblocks.utilium_slab": "Utilium Slab",
   "block.utilityblocks.utilium_stairs": "Utilium Stairs",
   "block.utilityblocks.utilium_fence": "Utilium Fence",

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "utilityblocks:block/stripped_utilium_log",
+    "side": "utilityblocks:block/stripped_utilium_log"
+  }
+}

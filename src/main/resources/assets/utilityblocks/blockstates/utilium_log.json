@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "utilityblocks:block/utilium_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "utilityblocks:block/utilium_log"
+    },
+    "axis=z": {
+      "model": "utilityblocks:block/utilium_log_horizontal",
+      "x": 90
+    }
+  }
+}

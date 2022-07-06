@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "utilityblocks:block/stripped_utilium_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "utilityblocks:block/stripped_utilium_wood"
+    },
+    "axis=z": {
+      "model": "utilityblocks:block/stripped_utilium_wood",
+      "x": 90
+    }
+  }
+}
