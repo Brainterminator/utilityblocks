@@ -1,0 +1,13 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "utilityblocks:utilium_logs"
+    }
+  ],
+  "result": {
+    "item": "utilityblocks:utilium_planks",
+    "count": 4
+  }
+}

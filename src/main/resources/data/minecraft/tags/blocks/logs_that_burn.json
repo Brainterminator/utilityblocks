@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "utilityblocks:utilium_log",
+    "utilityblocks:utilium_wood",
+    "utilityblocks:stripped_utilium_log",
+    "utilityblocks:stripped_utilium_wood"
+  ]
+}

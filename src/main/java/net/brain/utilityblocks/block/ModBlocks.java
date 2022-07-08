@@ -8,6 +8,7 @@ import net.brain.utilityblocks.block.custom.UtiliumPlantBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.sound.ModSounds;
+import net.brain.utilityblocks.world.feature.tree.UtiliumTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -123,6 +124,29 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> UTILIUM_PLANT = registerBlockWithoutItem("utilium_plant",
             () -> new UtiliumPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<Block> UTILIUM_SAPLING = registerBlock("utilium_sapling",
+            () -> new SaplingBlock(new UtiliumTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+    public static final RegistryObject<Block> UTILIUM_LEAVES = registerBlock("utilium_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            },
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> UTILIUM_LOG = registerBlock("utilium_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),

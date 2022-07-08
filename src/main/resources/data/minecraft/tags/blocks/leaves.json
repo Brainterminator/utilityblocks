@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "utilityblocks:connectable_oak_leaf_wall"
+    "utilityblocks:connectable_oak_leaf_wall",
+    "utilityblocks:utilium_leaves"
   ]
 }

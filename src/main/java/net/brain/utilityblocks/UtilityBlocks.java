@@ -60,6 +60,9 @@ public class UtilityBlocks
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_LAVENDER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.UTILIUM_PLANT.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.UTILIUM_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.UTILIUM_SAPLING.get(), RenderType.cutout());
+
     }
 
     private void setup(final FMLCommonSetupEvent event)

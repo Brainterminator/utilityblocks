@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "utilityblocks:stripped_utilium_log"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:stripped_utilium_wood"
+  }
+}

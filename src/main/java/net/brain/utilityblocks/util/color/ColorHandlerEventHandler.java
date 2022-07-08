@@ -1,4 +1,4 @@
-package net.brain.utilityblocks.util;
+package net.brain.utilityblocks.util.color;
 
 import net.brain.utilityblocks.block.ModBuildingBlocks;
 import net.minecraft.client.renderer.BiomeColors;
