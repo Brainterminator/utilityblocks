@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ],
+  "addition": "minecraft:melon_seeds",
+  "type": "utilityblocks:melon_seeds_from_grass"
+}

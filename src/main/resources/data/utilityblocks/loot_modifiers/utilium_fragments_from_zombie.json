@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/zombie"
+    }
+  ],
+  "addition": "utilityblocks:utilium_fragments",
+  "type": "utilityblocks:utilium_fragments_from_zombie"
+}
