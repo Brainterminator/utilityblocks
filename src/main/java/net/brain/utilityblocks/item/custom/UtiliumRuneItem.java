@@ -26,14 +26,7 @@ public class UtiliumRuneItem extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if(pPlayer.getItemInHand(pUsedHand).hasTag()) {
-            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore");
-            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore_x");
-            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore_y");
-            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore_z");
-        }
-
-
+        //this.resetRune(pPlayer.getItemInHand(pUsedHand));
         return super.use(pLevel, pPlayer, pUsedHand);
     }
 
@@ -44,6 +37,17 @@ public class UtiliumRuneItem extends Item {
         }
         else return pStack.isEnchanted();
     }
+
+
+    public void resetRune(ItemStack stack){
+        if(stack.hasTag()) {
+            stack.getTag().remove("utilityblocks.last_ore");
+            stack.getTag().remove("utilityblocks.last_ore_x");
+            stack.getTag().remove("utilityblocks.last_ore_y");
+            stack.getTag().remove("utilityblocks.last_ore_z");
+        }
+    }
+
 
     /*
     @Override

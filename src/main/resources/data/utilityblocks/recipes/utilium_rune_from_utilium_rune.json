@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "utilityblocks:utilium_rune"
+    }
+  ],
+  "result": {
+    "item": "utilityblocks:utilium_rune"
+  }
+}

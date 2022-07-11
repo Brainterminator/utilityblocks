@@ -6,7 +6,7 @@ import net.brain.utilityblocks.block.ModBuildingBlocks;
 import net.brain.utilityblocks.effect.ModEffects;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.painting.ModPaintings;
-import net.brain.utilityblocks.painting.potion.ModPotions;
+import net.brain.utilityblocks.potion.ModPotions;
 import net.brain.utilityblocks.sound.ModSounds;
 import net.brain.utilityblocks.util.BetterBrewingRecipe;
 import net.brain.utilityblocks.util.ModItemProperties;

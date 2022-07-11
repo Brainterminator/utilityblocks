@@ -4,6 +4,7 @@ import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.sound.ModSounds;
 import net.brain.utilityblocks.util.InventoryUtil;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;

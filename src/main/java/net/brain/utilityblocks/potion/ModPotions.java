@@ -1,4 +1,4 @@
-package net.brain.utilityblocks.painting.potion;
+package net.brain.utilityblocks.potion;
 
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.effect.ModEffects;
@@ -15,7 +15,7 @@ public class ModPotions {
             = DeferredRegister.create(ForgeRegistries.POTIONS, UtilityBlocks.MOD_ID);
 
     public static final RegistryObject<Potion> ORE_SEEKER_POTION = POTIONS.register("ore_seeker_potion",
-            () -> new Potion(new MobEffectInstance(ModEffects.ORE_SEEKER.get(),40,0)));
+            () -> new Potion(new MobEffectInstance(ModEffects.ORE_SEEKER.get(),1,0)));
 
     public static final RegistryObject<Potion> BEER = POTIONS.register("beer",
             () -> new Potion(new MobEffectInstance(MobEffects.CONFUSION,2400,0)));
