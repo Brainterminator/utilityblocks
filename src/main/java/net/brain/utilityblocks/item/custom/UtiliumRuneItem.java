@@ -28,6 +28,9 @@ public class UtiliumRuneItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         if(pPlayer.getItemInHand(pUsedHand).hasTag()) {
             pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore");
+            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore_x");
+            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore_y");
+            pPlayer.getItemInHand(pUsedHand).getTag().remove("utilityblocks.last_ore_z");
         }
 
 

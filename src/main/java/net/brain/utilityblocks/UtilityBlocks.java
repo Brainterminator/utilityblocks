@@ -3,15 +3,21 @@ package net.brain.utilityblocks;
 import com.mojang.logging.LogUtils;
 import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.block.ModBuildingBlocks;
+import net.brain.utilityblocks.effect.ModEffects;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.painting.ModPaintings;
+import net.brain.utilityblocks.painting.potion.ModPotions;
 import net.brain.utilityblocks.sound.ModSounds;
+import net.brain.utilityblocks.util.BetterBrewingRecipe;
 import net.brain.utilityblocks.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -38,6 +44,9 @@ public class UtilityBlocks
 
         ModPaintings.register(eventBus);
         ModSounds.register(eventBus);
+
+        ModEffects.register(eventBus);
+        ModPotions.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -69,6 +78,12 @@ public class UtilityBlocks
     {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.LAVENDER.getId(), ModBlocks.POTTED_LAVENDER);
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    ModItems.UTILIUM_RUNE.get(), ModPotions.ORE_SEEKER_POTION.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    Items.WHEAT, ModPotions.BEER.get()));
         });
     }
 

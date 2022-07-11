@@ -87,6 +87,16 @@
   "sounds.utilityblocks.utilium_hit":"Utilium Block Hit",
   "sounds.utilityblocks.utilium_fall":"Fallen on Utilium Block",
 
+  "effect.utilityblocks.ore_seeker":"Ore Seeker",
+  "effect.utilityblocks.ore_seeker":"Ore Seeker",
+
+  "item.minecraft.potion.effect.ore_seeker_potion": "Ore Seeker Potion",
+  "item.minecraft.splash_potion.effect.ore_seeker_potion": "Splash Potion of Ore Seeking",
+  "item.minecraft.lingering_potion.effect.ore_seeker_potion": "Lingering Potion of Ore Seeking",
+  "item.minecraft.potion.effect.beer": "Beer",
+  "item.minecraft.splash_potion.effect.beer": "Throwable Beer",
+  "item.minecraft.lingering_potion.effect.beer": "Beer Pond in a Bottle",
+
 
 
   "itemGroup.buildingblocks": "Building Blocks",

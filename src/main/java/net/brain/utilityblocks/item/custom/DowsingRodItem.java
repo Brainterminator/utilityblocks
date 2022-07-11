@@ -91,12 +91,19 @@ public class DowsingRodItem extends Item {
         if(!dataTablet.hasTag()) {
             CompoundTag nbtData = new CompoundTag();
             nbtData.putString("utilityblocks.last_ore", oreLocation(pos, WhichValuableBlock(blockBelow)));
+            nbtData.putString("utilityblocks.last_ore_x", String.valueOf(pos.getX()));
+            nbtData.putString("utilityblocks.last_ore_y", String.valueOf(pos.getY()));
+            nbtData.putString("utilityblocks.last_ore_z", String.valueOf(pos.getZ()));
+
 
             dataTablet.setTag(nbtData);
         }
         else{
             CompoundTag nbtData = dataTablet.getTag();
             nbtData.putString("utilityblocks.last_ore", oreLocation(pos, WhichValuableBlock(blockBelow)));
+            nbtData.putString("utilityblocks.last_ore_x", String.valueOf(pos.getX()));
+            nbtData.putString("utilityblocks.last_ore_y", String.valueOf(pos.getY()));
+            nbtData.putString("utilityblocks.last_ore_z", String.valueOf(pos.getZ()));
 
             dataTablet.setTag(nbtData);
         }
