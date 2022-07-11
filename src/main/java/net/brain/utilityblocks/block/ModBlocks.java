@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
@@ -93,17 +94,19 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> UTILIUM_ORE = registerBlock("utilium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops()
                     .strength(5f)
-                    .sound(SoundType.STONE)),
+                    .sound(SoundType.STONE),
+                    UniformInt.of(3, 7)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_UTILIUM_ORE = registerBlock("deepslate_utilium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .requiresCorrectToolForDrops()
                     .strength(9f)
-                    .sound(SoundType.STONE)),
+                    .sound(SoundType.STONE),
+                    UniformInt.of(3, 7)),
                 ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 

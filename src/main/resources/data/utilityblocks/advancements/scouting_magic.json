@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "utilityblocks:dowsing_rod"
+    },
+    "title": "Scouting Magic",
+    "description": "Oh Look what's under there, better not be tempted to dig down straight",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "utilityblocks:utilityblocks",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "utilityblocks:dowsing_rod"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
