@@ -1,10 +1,7 @@
 package net.brain.utilityblocks.block;
 
-import net.brain.utilityblocks.block.custom.ConnectableWallBlock;
-import net.brain.utilityblocks.block.custom.ModFlammableRotatedPillarBlock;
-import net.brain.utilityblocks.block.custom.PotionBlock;
+import net.brain.utilityblocks.block.custom.*;
 import net.brain.utilityblocks.UtilityBlocks;
-import net.brain.utilityblocks.block.custom.UtiliumPlantBlock;
 import net.brain.utilityblocks.item.ModCreativeModeTab;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.sound.ModSounds;
@@ -299,6 +296,11 @@ public class ModBlocks {
                     .sound(SoundType.STONE)
                     ,MobEffects.LEVITATION,60,80),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.beamup_block");
+
+    public static final RegistryObject<Block> ASTRAL_PROJECTOR = registerBlock("astral_projector",
+            () -> new AstralProjectorBlock(BlockBehaviour.Properties.copy(ModBlocks.UTILIUM_BLOCK.get())
+                    .sound(ModSounds.UTILIUM)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     /*
             NOT IMPLEMENTED BLOCK IDEAS
