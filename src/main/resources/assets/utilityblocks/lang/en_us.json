@@ -70,6 +70,8 @@
 
   "block.utilityblocks.slingshot_block_1": "Slingshot Block",
 
+  "block.utilityblocks.astral_projector": "Astral Projector",
+
   "item.utilityblocks.dowsing_rod.no_valuables": "No Valuables Found!",
 
   "tooltip.utilityblocks.dowsing_rod.tooltip.shift": "Right Click to find Valuables",

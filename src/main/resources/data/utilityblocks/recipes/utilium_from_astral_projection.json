@@ -1,0 +1,17 @@
+{
+  "type": "utilityblocks:astral_projection",
+  "ingredients": [
+    {
+      "item": "utilityblocks:utilium_rune"
+    },
+    {
+      "item": "utilityblocks:utilium_fragments"
+    },
+    {
+      "item": "utilityblocks:dowsing_rod"
+    }
+  ],
+  "output": {
+    "item": "utilityblocks:utilium"
+  }
+}

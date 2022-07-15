@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "utilityblocks:block/astral_projector_side",
+    "north": "utilityblocks:block/astral_projector_side",
+    "south": "utilityblocks:block/astral_projector_side",
+    "east": "utilityblocks:block/astral_projector_side",
+    "west": "utilityblocks:block/astral_projector_side",
+    "up": "utilityblocks:block/astral_projector_top",
+    "down": "utilityblocks:block/astral_projector_down"
+  }
+}

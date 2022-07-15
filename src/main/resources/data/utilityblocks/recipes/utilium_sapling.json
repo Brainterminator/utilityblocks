@@ -1,0 +1,17 @@
+{
+  "type": "utilityblocks:astral_projection",
+  "ingredients": [
+    {
+      "item": "utilityblocks:utilium_rune"
+    },
+    {
+      "item": "minecraft:oak_sapling"
+    },
+    {
+      "item": "utilityblocks:dowsing_rod"
+    }
+  ],
+  "output": {
+    "item": "utilityblocks:utilium_sapling"
+  }
+}

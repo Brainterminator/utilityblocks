@@ -1,8 +1,8 @@
-package net.brain.utilityblocks.block.entity;
+package net.brain.utilityblocks.entity;
 
 import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.block.ModBlocks;
-import net.brain.utilityblocks.block.entity.custom.AstralProjectorEntity;
+import net.brain.utilityblocks.entity.custom.AstralProjectorEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

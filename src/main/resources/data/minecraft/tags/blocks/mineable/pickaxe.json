@@ -20,6 +20,7 @@
     "utilityblocks:connectable_diorite_wall",
     "utilityblocks:connectable_polished_diorite_wall",
     "utilityblocks:connectable_andesite_wall",
-    "utilityblocks:connectable_polished_andesite_wall"
+    "utilityblocks:connectable_polished_andesite_wall",
+    "utilityblocks:astral_projector"
   ]
 }

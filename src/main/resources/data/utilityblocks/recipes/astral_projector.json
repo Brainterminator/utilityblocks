@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#Y#",
+    "YZY",
+    "#Y#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "Y": {
+      "item": "utilityblocks:utilium"
+    },
+    "Z": {
+      "item": "utilityblocks:utilium_rune"
+    }
+  },
+  "result": {
+    "item": "utilityblocks:astral_projector"
+  }
+}

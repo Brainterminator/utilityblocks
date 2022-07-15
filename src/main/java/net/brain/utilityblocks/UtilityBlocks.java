@@ -3,14 +3,18 @@ package net.brain.utilityblocks;
 import com.mojang.logging.LogUtils;
 import net.brain.utilityblocks.block.ModBlocks;
 import net.brain.utilityblocks.block.ModBuildingBlocks;
-import net.brain.utilityblocks.block.entity.ModBlockEntities;
+import net.brain.utilityblocks.entity.ModBlockEntities;
 import net.brain.utilityblocks.effect.ModEffects;
 import net.brain.utilityblocks.item.ModItems;
 import net.brain.utilityblocks.painting.ModPaintings;
 import net.brain.utilityblocks.potion.ModPotions;
+import net.brain.utilityblocks.recipe.ModRecipes;
+import net.brain.utilityblocks.screen.AstralProjectorScreen;
+import net.brain.utilityblocks.screen.ModMenuTypes;
 import net.brain.utilityblocks.sound.ModSounds;
 import net.brain.utilityblocks.util.BetterBrewingRecipe;
 import net.brain.utilityblocks.util.ModItemProperties;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.Items;
@@ -50,6 +54,9 @@ public class UtilityBlocks
         ModPotions.register(eventBus);
 
         ModBlockEntities.register(eventBus);
+        ModMenuTypes.register(eventBus);
+
+        ModRecipes.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -74,6 +81,8 @@ public class UtilityBlocks
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.UTILIUM_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.UTILIUM_SAPLING.get(), RenderType.cutout());
+
+        MenuScreens.register(ModMenuTypes.ASTRAL_PROJECTOR_MENU.get(), AstralProjectorScreen::new);
 
     }
 

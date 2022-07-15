@@ -4,7 +4,10 @@ import net.brain.utilityblocks.UtilityBlocks;
 import net.brain.utilityblocks.event.loot.DowsingRodInVillageAdditionModifier;
 import net.brain.utilityblocks.event.loot.MelonSeedsFromGrassAdditionModifier;
 import net.brain.utilityblocks.event.loot.UtiliumFragmentsFromZombieAdditionModifier;
+import net.brain.utilityblocks.recipe.AstralProjectorRecipe;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,5 +29,10 @@ public class ModEventBusEvents {
                 new UtiliumFragmentsFromZombieAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(UtilityBlocks.MOD_ID,"utilium_fragments_from_zombie"))
         );
+    }
+
+    @SubscribeEvent
+    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
+        Registry.register(Registry.RECIPE_TYPE, AstralProjectorRecipe.Type.ID, AstralProjectorRecipe.Type.INSTANCE);
     }
 }
