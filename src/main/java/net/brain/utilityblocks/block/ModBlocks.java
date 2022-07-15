@@ -33,14 +33,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, UtilityBlocks.MOD_ID);
 
 
-    // ENTITY BLOCKS
-
-    public static final RegistryObject<Block> ASTRAL_PROJECTOR = registerBlock("astral_projector",
-            () -> new AstralProjectorBlock(BlockBehaviour.Properties.copy(ModBlocks.UTILIUM_BLOCK.get())
-                    .requiresCorrectToolForDrops()),
-            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
     // PURE UTILIUM BLOCKS
+
 
     public static final RegistryObject<Block> UTILIUM_BLOCK = registerBlock("utilium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
@@ -91,6 +86,14 @@ public class ModBlocks {
                             .requiresCorrectToolForDrops()
                             .strength(5f)
                             .sound(ModSounds.UTILIUM)),
+            ModCreativeModeTab.UTILITY_BLOCKS_TAB);
+
+
+    // BLOCK ENTITIES
+
+    public static final RegistryObject<Block> ASTRAL_PROJECTOR = registerBlock("astral_projector",
+            () -> new AstralProjectorBlock(BlockBehaviour.Properties.copy(ModBlocks.UTILIUM_BLOCK.get())
+                    .requiresCorrectToolForDrops()),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB);
 
 
@@ -303,6 +306,8 @@ public class ModBlocks {
                     .sound(SoundType.STONE)
                     ,MobEffects.LEVITATION,60,80),
             ModCreativeModeTab.UTILITY_BLOCKS_TAB, "tooltip.utilityblocks.block.beamup_block");
+
+
 
     /*
             NOT IMPLEMENTED BLOCK IDEAS
