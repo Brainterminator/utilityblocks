@@ -23,7 +23,7 @@ public class ModFoliageColor {
                 var biome = level.getBiome(pos).value();
                 return getBiomeBasedColor(biome);
             } else{
-                return 0;
+                return getDefaultColor();
             }
         }
 
