@@ -2,7 +2,9 @@ package net.brain.utilityblocks.util.color;
 
 import net.brain.utilityblocks.block.ModBlocks;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +21,7 @@ public class ModColorHandlerEventHandler {
     public static void registerBlockColors(ColorHandlerEvent.Block event){
         event.getBlockColors().register((p_92626_, p_92627_, p_92628_, p_92629_) -> {
             return p_92627_ != null && p_92628_ != null ?
-                    ModFoliageColor.getDefaultColor() : ModFoliageColor.getDefaultColor(); //Command in front of : should return Biome based tint
+                    ModFoliageColor.get(p_92627_,p_92628_) : ModFoliageColor.getDefaultColor(); //Command in front of : should return Biome based tint
         }, ModBlocks.UTILIUM_LEAVES.get());
     }
 
