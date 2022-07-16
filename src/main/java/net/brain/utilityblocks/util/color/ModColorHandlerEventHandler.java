@@ -21,7 +21,7 @@ public class ModColorHandlerEventHandler {
     public static void registerBlockColors(ColorHandlerEvent.Block event){
         event.getBlockColors().register((p_92626_, p_92627_, p_92628_, p_92629_) -> {
             return p_92627_ != null && p_92628_ != null ?
-                    ModFoliageColor.get(p_92627_,p_92628_) : ModFoliageColor.getDefaultColor(); //Command in front of : should return Biome based tint
+                    ModFoliageColor.getDefaultColor() : ModFoliageColor.getDefaultColor(); //Command in front of : ModFoliageColor.get(p_92627_,p_92628_)
         }, ModBlocks.UTILIUM_LEAVES.get());
     }
 
