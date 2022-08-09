@@ -1,4 +1,4 @@
-package com.brainterminator.utilityblocks.util.color;
+package com.brainterminator.utilityblocks.util.modcolor;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterClientReloadListenersEvent;

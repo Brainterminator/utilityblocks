@@ -1,4 +1,4 @@
-package com.brainterminator.utilityblocks.util.color;
+package com.brainterminator.utilityblocks.util.modcolor;
 
 import java.io.IOException;
 
